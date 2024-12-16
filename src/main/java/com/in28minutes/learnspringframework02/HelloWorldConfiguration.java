@@ -58,8 +58,8 @@ public class HelloWorldConfiguration {
     }
 
 //    Autowiring existing beans instead of methods()
-    @Bean
-    public Person person4Parameter(String name,int age,Address address1){
-        return  new Person(name,age,address1);
-    }
+//    @Bean
+//    public Person person4Parameter(String name,int age,Address address1){
+//        return  new Person(name,age,address1);
+//    }
 }
