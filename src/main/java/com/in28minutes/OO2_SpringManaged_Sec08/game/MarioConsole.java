@@ -1,5 +1,10 @@
 package com.in28minutes.OO2_SpringManaged_Sec08.game;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component("marioGamingConsole")
+@Primary
 public class MarioConsole implements GamingConsole{
     @Override
     public void up() {

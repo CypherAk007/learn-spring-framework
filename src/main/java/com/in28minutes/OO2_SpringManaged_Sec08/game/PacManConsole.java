@@ -1,7 +1,11 @@
 package com.in28minutes.OO2_SpringManaged_Sec08.game;
 
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
+@Qualifier("packmanQualifier")
 public class PacManConsole implements GamingConsole {
     @Override
     public void up() {

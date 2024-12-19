@@ -28,7 +28,7 @@ public class HelloWorldConfiguration {
     }
 
     @Bean
-    @Primary
+//    @Primary
     public Address address2(){
         return new Address("Ak",23,"BLR");
     }
