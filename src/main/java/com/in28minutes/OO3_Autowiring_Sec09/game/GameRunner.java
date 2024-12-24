@@ -6,14 +6,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class GameRunner {
-    @Autowired
-//    @Qualifier("PackmanGamingConsole")
-    @Qualifier("MarioGamingConsole")
+//    @Autowired
+////    @Qualifier("PackmanGamingConsole")
+//    @Qualifier("MarioGamingConsole")
     private GamingConsole game;
-
-//    public GameRunner(@Qualifier("PackmanGamingConsole") GamingConsole game){
-//        this.game = game;
-//    }
+//    Autowired is automatically applied no need to explicily mention for
+//    constructor injection
+    public GameRunner(@Qualifier("PackmanGamingConsole") GamingConsole game){
+        this.game = game;
+    }
 
     public void run(){
         game.up();
